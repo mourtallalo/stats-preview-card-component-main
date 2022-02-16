@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-family: "Inter", Arial, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: hsl(233, 47%, 7%);
+      }
+      main {
+        width: 90%;
+        max-width: 425px;
+        margin: 80px auto;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 8px;
+      }
+      .info {
+        width: 88%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px 0;
+      }
+      .bgImage {
+        background-image: url("images/image-header-mobile.jpg");
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-size: cover;
+        margin: 0 auto;
+        height: 247px;
+        border-radius: 8px 8px 0 0;
+      }
+      strong {
+        color: hsl(277, 64%, 61%);
+      }
+      .info > p {
+        margin-top: 20px;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .turnover div {
+        margin-top: 25px;
+      }
+      .turnover div p i {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .turnover div p b {
+        font-weight: normal;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: "Lexend Deca", sans-serif;
+        letter-spacing: 1px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        main {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          max-width: 836px;
+          width: 58%;
+        }
+        .bgImage {
+          background-image: url("images/image-header-desktop.jpg");
+          margin: initial;
+          height: initial;
+          grid-column: 2;
+          grid-row: 1;
+          border-radius: 0 8px 8px 0;
+        }
+        .info {
+          width: initial;
+          text-align: left;
+          padding: 40px;
+        }
+        .turnover {
+          display: flex;
+        }
+        .turnover div {
+          margin: 40px 50px 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="bgImage"></div>
+      <div class="info">
+        <h1>Get <strong>insights</strong> that help your business grow.</h1>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="turnover">
+          <div>
+            <p><i>10k+</i></p>
+            <p><b>companies</b></p>
+          </div>
+          <div>
+            <p><i>314</i></p>
+            <p><b>templates</b></p>
+          </div>
+          <div>
+            <p><i>12M+</i></p>
+            <p><b>queries</b></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/mourtallalo">dev_lo</a>.
+    </div>
+  </body>
+</html>
